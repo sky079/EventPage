@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Page</title>
+  
+  <!--CSS STYLESHEETS-->
+  <link rel="stylesheet" href="Styles/navbar.css">
+  <link rel="stylesheet" href="Styles/add-event.css">
+  <script src="addevent.js" defer></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-------------------------------------- NAVBAR STARTS HERE ------------------------------------------->
+
+  <nav>
+
+    <div class="brand-logo">
+      <a href="https://renaissance.programmingpathshala.com/crack-coding-interviews">
+        <img src="Resources/Navbar Images/pplogo1.png" height=45px> 
+      </a>
+    </div>
+    
+    <ul>
+      <a href="https://renaissance.programmingpathshala.com/crack-coding-interviews" class="brand-title">Programming Pathshala</a>
+      
+      <li><a class="renaissance" href="#">Renaissance</a></li>
+      <li><a class="campusprograms" href="#">Campus Programs</a></li>
+      <li><a class="hirewithus" href="#">Hire With Us</a></li>
+      <li><a class="stories" href="https://renaissance.programmingpathshala.com/crack-coding-interviews/stories">Stories</a></li>
+      <li><a class="navevents" href="#">Events</a></li>
+
+      <li><a href="#" class="login">Log In</a></li>
+      <li><a href="#" class="startfreetrial">Start Free Trial</a></li>
+    </ul>
+    
+  </nav>
+
+<!-------------------------------------- NAVBAR ENDS HERE --------------------------------------------->
+
+
+<!------------------------------------ ADD EVENT STARTS HERE ------------------------------------------->
+
+<div class="add-event-container">
+
+
+    <h2>Add an Event</h2>
+
+    <label for="name">Title</label>
+    <input type="text" id="name" placeholder="Name">
+
+    <label for="desc">Description</label>
+    <textarea id="desc" cols="30" rows="5" placeholder="Write here"></textarea>
+
+    <img src="Resources/Add Event Images/add icon.png" alt="Add icon" id="add-icon">
+    <input type="file" id="choose-file">
+    <h3 id="add-image-text">Add Image</h3> 
+    <br>
+
+
+    <div class="lowerdivs">
+        <span>
+            Date <br>
+            <input id="date" type="date">
+        </span>
+        <span>
+            Time <br>
+            <input id="time" type="time">
+        </span>
+        <span>
+            Duration <br>
+            <input id="duration" type="number">
+        </span>
+    </div>
+
+
+    <div class="lowerdivs">
+
+      <span>
+          Venue <br> 
+          <select id="venue">
+              <option>Choose Your Option</option>
+              <option value="1">Google Meet</option>
+              <option value="2">Zoom</option>
+              <option value="3">Discord</option>
+          </select>
+      </span>
+
+      <span>
+          No. of Praticipants <br> 
+          <input id="participants" type="number">
+      </span>
+
+    </div> 
+   
+
+</div> 
+
+<a href="#">
+    <button onclick="callAlert();" id="publish-button">Publish</button>
+</a>
+
+<!------------------------------------- ADD EVENT ENDS HERE -------------------------------------------->
+
+
+<!---------------------------------------- FOOTER STARTS HERE ------------------------------------------>
+
+<footer>
+
+  <div class="container">
+      <hr id="footer-hr1">
+      <div class="row">
+          <div class="column-1">
+              <h2>Want To know more <br> about our courses?</h2>
+              <h4>Let’s hear all about it. <a href="#">Contact Us!</a></h4>
+              <ul style="list-style: none;">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Renaissance</a></li>
+                  <li><a href="#">Course Curriculum</a></li> 
+                  <br>
+
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Stories</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <br>
+
+                  <li><a href="#">Teach with Us</a></li>
+                  <li><a href="#">Get Scholarship</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Careers</a></li>
+              </ul>
+          </div>
+          <div class="column-2">
+              <img src="Resources/Footer Images/logo.png" class="logo">
+              <p>We help our users to build skills, which are valued <br> and enabling them to believe in themselves.</p>
+              <div class="logos">
+              <a href="#"><img src="Resources/Footer Images/linkedin.png" class="linkedin"></a>
+              <a href="#"><img src="Resources/Footer Images/youtube.png" class="youtube"></a>
+              <a href="#"><img src="Resources/Footer Images/fb.png" class="fb"></a>
+              <a href="#"><img src="Resources/Footer Images/insta.png" class="insta"></a>
+              <a href="#"><img src="Resources/Footer Images/telegram.png" class="telegram"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <br><br><br><br>
+
+  <!--Chat With Us-->
+  <a href="#">
+    <img src="Resources/Footer Images/bottom-logo.png" class="bottom-logo">
+  </a>
+  <hr>
+  <!--Copyright-->
+  <p class="copyright">All rights reserved with @Programming Pathshala</p>
+
+</footer>
+
+<!------------------------------------------ FOOTER ENDS HERE ------------------------------------------>
+
+</body>
+</html>
